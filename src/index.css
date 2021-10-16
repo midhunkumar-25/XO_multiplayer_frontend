@@ -11,3 +11,50 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.board{
+  height: 31rem;
+  width: 31rem;
+  margin: auto;
+  border: 2px solid;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.square{
+  height: 10rem;
+  width: 10rem;
+  margin: auto;
+  border: 2px solid;
+  cursor: pointer;
+
+}
+
+/*.square:hover{
+  background-color: rgb(255, 253, 253);
+  cursor: pointer;
+}*/
+
+.symbol{
+  font-size: 3rem;
+  align-content: center;
+}
+
+@media only screen and (max-width: 768px){
+  .board{
+    height: 22rem;
+    width: 22rem;
+    margin: auto;
+    border: 1px solid;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .square{
+    height: 7rem;
+    width: 7rem;
+    margin: auto;
+    border: 1px solid;
+  }
+}
+
